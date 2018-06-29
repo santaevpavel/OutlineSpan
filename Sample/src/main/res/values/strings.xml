@@ -1,3 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">OutlineSpan</string>
+    <string name="text" tools:ignore="Typos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus massa, fermentum at ante quis, finibus bibendum augue. Ut hendrerit porttitor libero vel tincidunt. Ut cursus quam et dui sollicitudin faucibus consectetur non libero. Praesent vel ipsum feugiat, accumsan risus non, pellentesque mauris. Vivamus ut nibh ac arcu blandit auctor finibus eget urna. Phasellus quis metus at purus ultrices varius. Pellentesque ac lacus a ligula ornare ultrices. Sed eu auctor eros. Etiam lobortis ut nibh et auctor. Praesent vitae nibh nibh. Cras ultrices nisi vel ante tincidunt egestas.</string>
 </resources>
