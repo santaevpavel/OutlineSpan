@@ -1,6 +1,8 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.github.dcendents.android-maven'
+
 
 android {
     compileSdkVersion 27
@@ -36,4 +38,17 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
+
+archivesBaseName = "outline-span"
+group = "ru.santaev"
+
+install {
+    repositories.mavenInstaller {
+        pom.project {
+            group "ru.santaev"
+            artifactId "outline-span"
+            version "0.1.0"
+        }
+    }
 }
