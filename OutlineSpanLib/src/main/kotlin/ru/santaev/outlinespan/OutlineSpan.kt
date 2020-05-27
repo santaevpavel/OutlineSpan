@@ -13,12 +13,18 @@ class OutlineSpan(
 ): ReplacementSpan() {
 
     override fun getSize(
-            paint: Paint,
-            text: CharSequence,
-            start: Int,
-            end: Int,
-            fm: Paint.FontMetricsInt?
+        paint: Paint,
+        text: CharSequence,
+        start: Int,
+        end: Int,
+        fontMetrics: Paint.FontMetricsInt?
     ): Int {
+        if (fontMetrics != null && paint.fontMetricsInt != null) {
+            fontMetrics.bottom = paint.fontMetricsInt.bottom
+            fontMetrics.top = paint.fontMetricsInt.top
+            fontMetrics.descent = paint.fontMetricsInt.descent
+            fontMetrics.leading = paint.fontMetricsInt.leading
+        }
         return paint.measureText(text.toString().substring(start until end)).toInt()
     }
 
