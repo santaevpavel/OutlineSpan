@@ -1,4 +1,6 @@
 # OutlineSpan
+[![](https://jitpack.io/v/santaevpavel/OutlineSpan.svg)](https://jitpack.io/#santaevpavel/OutlineSpan)
+
 Library (just one class) for outlining TextView.
 
 ## How to use
@@ -30,7 +32,7 @@ repositories {
 Add dependency: 
 ```
 dependencies {
-    implementation 'com.github.santaevpavel:OutlineSpan:0.1.0'
+    implementation 'com.github.santaevpavel:OutlineSpan:0.1.1'
 }
 ```
 If you don't want to add dependency, you can copy class [OutlineSpan](https://gist.github.com/santaevpavel/61eb23092bdb8a926aeb8302ec95b4b6) to your project.
